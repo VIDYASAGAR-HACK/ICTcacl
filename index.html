@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="unit-toggle">°C / °F</div>
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="result" disabled>
+            </div>
+            <div class="buttons">
+                <button onclick="clearScreen()">C</button>
+                <button onclick="backspace()"><<</button>
+                <button onclick="insert('(')">(</button>
+                <button onclick="insert(')')">)</button>
+                <button onclick="insert('sin(')">sin</button>
+                <button onclick="insert('cos(')">cos</button>
+                <button onclick="insert('tan(')">tan</button>
+                <button onclick="insert('^')">^</button>
+                <button onclick="insert('7')">7</button>
+                <button onclick="insert('8')">8</button>
+                <button onclick="insert('9')">9</button>
+                <button onclick="insert('/')">/</button>
+                <button onclick="insert('4')">4</button>
+                <button onclick="insert('5')">5</button>
+                <button onclick="insert('6')">6</button>
+                <button onclick="insert('*')">*</button>
+                <button onclick="insert('1')">1</button>
+                <button onclick="insert('2')">2</button>
+                <button onclick="insert('3')">3</button>
+                <button onclick="insert('-')">-</button>
+                <button onclick="insert('0')">0</button>
+                <button onclick="insert('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="insert('+')">+</button>
+                <button onclick="insert('sqrt(')">√</button>
+                <button onclick="insert('log(')">log</button>
+                <button onclick="insert('ln(')">ln</button>
+                <button onclick="insert('pi')">π</button>
+                <button onclick="insert('e')">e</button>
+                <button onclick="memoryClear()">MC</button>
+                <button onclick="memoryRecall()">MR</button>
+                <button onclick="memoryAdd()">M+</button>
+                <button onclick="memorySubtract()">M-</button>
+            </div>
+        </div>
+        <div class="weather">
+            <div class="weather-current">
+                <div class="weather-icon"></div>
+                <div class="weather-info">
+                    <div class="temperature"></div>
+                    <div class="condition"></div>
+                </div>
+            </div>
+            <div class="weather-forecast"></div>
+            <div class="city-search">
+                <input type="text" id="city" placeholder="Enter city">
+                <button onclick="searchWeather()">Search</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
